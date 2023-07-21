@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+  --first-font: "Cormorant Garamond", serif;
+  --first-width: 850px;
+  --font-size: 14px;
+  --border-bor: 1px solid black;
+  --transition-all: all ease 0.8s;
+  --border-bottom: rgb(170, 170, 170) 1px solid;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: var(--font-size);
+  font-family: var(--first-font);
+}
+
+header > section {
+  display: flex;
+  flex-basis: 70%;
+  padding-top: 5px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: var(--first-width);
+  margin: 0 auto;
+  height: 50px;
+  margin-bottom: 0;
+  border-bottom: var(--border-bottom);
+}
+
+.logo {
+  text-align: center;
+  font-size: larger;
+  font-weight: 600;
+}
+
+section > nav {
+  display: flex;
+  justify-content: space-around;
+  flex-basis: 70%;
+}
+
+.social_line {
+  display: flex;
+}
+
+.social_line > div {
+  margin-top: 5px;
+  margin-inline: 5px;
+  width: 25px;
+  height: 25px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  transition: var(--transition-all);
+}
+
+.social_line > div:hover {
+  background-color: grey;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: grey;
+}
+
+.social_line > :nth-child(1) {
+  background-image: url(./img/twitter-128.png);
+}
+
+.social_line > :nth-child(2) {
+  background-image: url(./img/facebook-128.png);
+}
+
+.social_line > :nth-child(3) {
+  background-image: url(./img/instagram-2-128.png);
+}
+
+.social_line > :nth-child(4) {
+  background-image: url(./img/youtube-128.png);
+}
+
+.social_line > :nth-child(5) {
+  background-image: url(./img/gmail-128.png);
+}
+
+hr {
+  width: var(--first-width);
+  margin: 0 auto;
+}
+
+.welcome_cont {
+  display: flex;
+  width: var(--first-width);
+  margin: 0 auto;
+  justify-content: space-between;
+  border-bottom: var(--border-bottom);
+}
+
+.welcome_cont > .text {
+  flex-basis: 45%;
+}
+
+.welcome_cont > .bg {
+  flex-basis: 50%;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-image: url(./img/tree.jpg);
+}
+
+h1 {
+  margin: 20px auto;
+  font-size: 2.2rem;
+  padding-inline: 10px;
+  text-transform: capitalize;
+}
+
+.story_two > .text > .desc,
+.story_one > .text > .desc,
+.welcome_cont > .text > .description {
+  margin: 20px auto;
+  font-size: 1rem;
+  padding-inline: 10px;
+}
+
+.welcome_cont > .text > .sub_text {
+  margin: 20px auto;
+  font-size: 0.6rem;
+  margin: 3px auto;
+  padding-inline: 10px;
+}
+
+button {
+  position: relative;
+  left: 10px;
+  margin: 20px auto;
+  padding-inline: 10px;
+  width: 80px;
+  height: 40px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid grey;
+  box-shadow: 2px 2px 2px rgb(179, 178, 178);
+  transition: var(--transition-all);
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.story_one,
+.story_two {
+  height: 250px;
+  width: var(--first-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: var(--border-bottom);
+}
+
+.story_two {
+  flex-direction: row-reverse;
+}
+
+.story_two > .bg,
+.story_one > .bg {
+  flex-basis: 33%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.story_one > .bg {
+  background-image: url(./img/fire.jpg);
+}
+
+.story_two > .text,
+.story_one > .text {
+  flex-basis: 60%;
+}
+
+h2 {
+  margin: 15px auto;
+  font-size: 1.8rem;
+  padding-inline: 10px;
+  text-transform: capitalize;
+}
+
+.story_two > .bg {
+  border: var(--border-bor);
+  background-image: url(./img/lamp.jpeg);
+}
+
+.gallery {
+  width: var(--first-width);
+  margin: 0 auto;
+  height: 250px;
+  border-bottom: var(--border-bottom);
+}
+.gallery > .bg {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.gallery > .bg > div {
+  position: relative;
+  height: 100%;
+  flex-basis: 25%;
+}
+
+.gallery > .bg > div > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  color: rgba(255, 255, 255, 0);
+  transition: var(--transition-all);
+}
+
+.gallery > .bg > div > :nth-child(1) {
+  z-index: 0;
+  text-align: center;
+  top: -20px;
+  width: 100px;
+  height: 20px;
+  left: 50px;
+}
+
+.gallery > .bg > :nth-child(1) > .img {
+  flex-basis: 30%;
+  background-image: url(./img/palatka.jpg);
+}
+
+.gallery > .bg > :nth-child(2) > .img {
+  background-image: url(./img/kotelki.jpg);
+}
+
+.gallery > .bg > :nth-child(3) > .img {
+  background-image: url(./img/fire2.jpeg);
+}
+
+.gallery > .bg > :nth-child(4) > .img {
+  background-image: url(./img/verevki.jpg);
+}
+
+.gallery > .bg > div > div:hover {
+  color: rgb(255, 255, 255);
+  background-color: grey;
+}
+
+.cont_forms > h2,
+.gallery > h2 {
+  text-align: center;
+}
+
+.features {
+  width: var(--first-width);
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.features > div {
+  height: 200px;
+  flex-basis: 32%;
+  border: var(--border-bor);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.features > div > .img {
+  width: 30px;
+  height: 30px;
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.features > :nth-child(1) > .img {
+  background-image: url(./img/airplane-48.png);
+}
+
+.features > :nth-child(2) > .img {
+  background-image: url(./img/map_marker-48.png);
+}
+
+.features > :nth-child(3) > .img {
+  background-image: url(./img/movie-48.png);
+}
+
+.features > :nth-child(4) > .img {
+  background-image: url(./img/alarm_clock-48.png);
+}
+
+.features > :nth-child(5) > .img {
+  background-image: url(./img/face-48.png);
+}
+
+.features > :nth-child(6) > .img {
+  background-image: url(./img/genius-48.png);
+}
+
+.features > div > .name {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.features > div > .desc {
+  text-align: center;
+  padding-inline: 20px;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+.cont_forms {
+  width: var(--first-width);
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+form > .form1 {
+  display: flex;
+  justify-content: space-around;
+}
