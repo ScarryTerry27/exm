@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Экзамен</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../static/style.css" />
+    <script
+      src="https://kit.fontawesome.com/9318511c72.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <section>
+        <div class="logo"><a href="/">Tour-guide</a></div>
+        <nav>
+          <div>
+            <div><a href="#stories">Stories</a></div>
+            <div><a href="#gallery">Gallery</a></div>
+            <div><a href="#features">Features</a></div>
+            <div><a href="#write">Write to us</a></div>
+          </div>
+        </nav>
+      </section>
+      <div class="social_line">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </header>
+    <hr />
+    <div class="welcome_cont">
+      <div class="text">
+        <h1>Let's hit the road</h1>
+        <div class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+          error earum tempore nobis, omnis voluptatibus facilis, nihil officia
+          itaque, vel ducimus repellat saepe temporibus suscipit! Perferendis?
+        </div>
+        <div class="sub_text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
+          expedita iste hic accusamus nulla. Necessitatibus delectus iusto
+          fugiat aperiam explicabo dolore esse!
+        </div>
+        <button type="submit">Start</button>
+      </div>
+      <div class="bg"></div>
+    </div>
+    <div class="stories">
+      <div>
+        <div class="bg"></div>
+        <div class="text">
+          <h2><a name="stories">Story</a></h2>
+          <div class="desc">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit quisquam
+            voluptatum ducimus recusandae. Aliquam eius quaerat consequuntur
+            exercitationem? Magnam atque nam assumenda aliquid pariatur fuga
+            voluptate nobis repudiandae placeat maxime, cumque.
+          </div>
+          <button>More</button>
+        </div>
+      </div>
+      <div>
+        <div class="bg"></div>
+        <div class="text">
+          <h2>Story</h2>
+          <div class="desc">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit quisquam
+            voluptatum ducimus recusandae. Aliquam eius quaerat consequuntur
+            exercitationem? Magnam atque nam assumenda aliquid pariatur fuga
+            voluptate nobis repudiandae placeat maxime, cumque.
+          </div>
+          <button>More</button>
+        </div>
+      </div>
+    </div>
+    <div class="gallery">
+      <h2>
+        <a name="gallery">gallery</a>
+      </h2>
+      <div class="arrow">
+        <i class="fa-solid fa-circle-arrow-left fa-xs"></i>
+        <i class="fa-solid fa-circle-arrow-right fa-xs"></i>
+      </div>
+      <div class="bg">
+        <div>
+          <div>Lorem, ipsum.</div>
+          <div class="img"></div>
+        </div>
+        <div>
+          <div>Lorem, ipsum.</div>
+          <div class="img"></div>
+        </div>
+        <div>
+          <div>Lorem, ipsum.</div>
+          <div class="img"></div>
+        </div>
+        <div>
+          <div>Lorem, ipsum.</div>
+          <div class="img"></div>
+        </div>
+      </div>
+    </div>
+    <h2>Features</h2>
+    <div class="features">
+      <div>
+        <div class="img"><a name="features"></a></div>
+        <div class="name">One</div>
+        <div class="desc">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque,
+          animi esse.
+        </div>
+      </div>
+      <div>
+        <div class="img"></div>
+        <div class="name">Two</div>
+        <div class="desc">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, natus
+          accusamus!
+        </div>
+      </div>
+      <div>
+        <div class="img"></div>
+        <div class="name">three</div>
+        <div class="desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, animi
+          voluptatibus?
+        </div>
+      </div>
+      <div>
+        <div class="img"></div>
+        <div class="name">Four</div>
+        <div class="desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
+          ducimus eum?
+        </div>
+      </div>
+      <div>
+        <div class="img"></div>
+        <div class="name">Five</div>
+        <div class="desc">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Consequuntur, aliquam nesciunt.
+        </div>
+      </div>
+      <div>
+        <div class="img"></div>
+        <div class="name">Six</div>
+        <div class="desc">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, eligendi
+          itaque.
+        </div>
+      </div>
+    </div>
+    <div class="cont_forms"><a name="write"></a>
+      <h2>Write to us</h2>
+      <form action="main.py" method="post">
+        <div class="form1">
+          <div>
+            <label for="username">Name:</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Name"
+            />
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="userEmail"
+              placeholder="email"
+            />
+          </div>
+          <div>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="userphone" placeholder="phone" />
+          </div>
+        </div>
+        <div class="form2">
+          <div><span>Contact me via:</span></div>
+          <div>
+            <input type="radio" name="contact" id='contact1' checked>
+            <label for="contact1">Email</label>
+          </div>
+          <div>
+            <input type="radio" name="contact" id='contact2'>
+            <label for="contact2">Phone</label>
+          </div>
+          <div>
+            <input type="radio" name="contact" id='contact3'>
+            <label for="contact3">Telegram</label>
+          </div>
+        </div>
+        <div class="form3">
+          <div><span>Topic:</span></div>
+          <select name="list_others" id="list_others">
+            <option>Post my story</option>
+            <option>Письмо деду морозу</option>
+            <option>Что-то еще</option>
+            <option>Жалоба на плохие дороги</option>
+          </select>
+        </div>
+        <div class="form4">
+          <div><span>Message:</span></div>
+          <div><textarea name="message"></textarea></div>
+        </div>
+        <div class="form5">
+          <div>
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox">I am a human</label>
+          </div>
+          <div>
+            <input type="submit" value="SEND">
+          </div>
+        </div>
+      </form>
+    </div>
+    <hr>
+    <footer>
+      <div class="social_line">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div><span>&#169; UNTITLED 2019</span></div>
+    </footer>
+  </body>
+</html>
