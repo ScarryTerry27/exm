@@ -163,7 +163,7 @@
     </div>
     <div class="cont_forms"><a name="write"></a>
       <h2>Write to us</h2>
-      <form action="main.py" method="post">
+      <form action="/contact" method="POST" autocomplete="off">
         <div class="form1">
           <div>
             <label for="username">Name:</label>
@@ -205,7 +205,7 @@
         </div>
         <div class="form3">
           <div><span>Topic:</span></div>
-          <select name="list_others" id="list_others">
+          <select name="What_is_it?" id="list_others">
             <option>Post my story</option>
             <option>Письмо деду морозу</option>
             <option>Что-то еще</option>
@@ -218,11 +218,11 @@
         </div>
         <div class="form5">
           <div>
-            <input type="checkbox" name="checkbox" id="checkbox">
-            <label for="checkbox">I am a human</label>
+            <input type="checkbox" name="Human?" id="checkbox">
+            <label for="Human?">I am a human</label>
           </div>
           <div>
-            <input type="submit" value="SEND">
+           <input type="submit" value="SEND">
           </div>
         </div>
       </form>
