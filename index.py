@@ -11,7 +11,7 @@ def index():
 
 @app.route('/contact', methods=['POST'])
 def contact():
-    return '|||'.join([f'{k}: {v}' for k, v in dict(request.form).items()])
+    return '|||'.join([f'{k}: {v}' if v else f'{k}: {None}' for k, v in dict(request.form).items()])
 
 
 if __name__ == '__main__':
